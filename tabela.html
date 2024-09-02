@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        table {
+            margin: auto;
+            margin-top: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        th{
+            width: 150px;
+            padding: 10px;
+        }
+
+        .primeiro {
+            border-top: 2px solid #bcbcbc;
+            background-color: #e0e0e0;
+            width: 100px;
+        }
+
+        .segundo {
+            border-top: 2px solid #80a048;
+            background-color: #e1f2c3;
+        }
+
+        .terceiro {
+            border-top: 2px solid #7291be;
+            background-color: #c6d8f1;
+        }
+
+        .quarto {
+            border-top: 2px solid #9481ad;
+            background-color: #dfd5ed;
+        }
+
+        .quinto {
+            border-top: 2px solid #d88030;
+            background-color: #f1e1d2;
+        }
+
+        tbody {
+            text-align: center;
+        }
+
+        tbody > tr > td {
+            padding: 10px;
+        }
+
+        .periodo {
+            font-weight: bold;
+        }
+
+        #rodape {
+            color: #9b9b9b;
+            font-size: 10px;
+            caption-side: bottom;
+            text-align: left;
+            margin-left: 33px;
+            font-weight: bold;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th class="primeiro">Periodo</th>
+                <th class="segundo">Android</th>
+                <th class="terceiro">iOS</th>
+                <th class="quarto">Windows Phone</th>
+                <th class="quinto">Others</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="periodo">2016Q1</td>
+                <td>83.4%</td>
+                <td>15.4%</td>
+                <td>0.8%</td>
+                <td>0.4%</td>
+            </tr>
+            <tr>
+                <td class="periodo">2016Q2</td>
+                <td>87.6%</td>
+                <td>11.7%</td>
+                <td>0.4%</td>
+                <td>0.3%</td>
+            </tr>
+            <tr>
+                <td class="periodo">2016Q3</td>
+                <td>86.8%</td>
+                <td>12.5%</td>
+                <td>0.3%</td>
+                <td>0.4%</td>
+            </tr>
+            <tr>
+                <td class="periodo">2016Q4</td>
+                <td>81.4%</td>
+                <td>18.2%</td>
+                <td>0.2%</td>
+                <td>0.2%</td>
+            </tr>
+            <tr>
+                <td class="periodo">2017Q1</td>
+                <td>85.0%</td>
+                <td>14.7%</td>
+                <td>0.1%</td>
+                <td>0.1%</td>
+            </tr>
+        </tbody>
+        <caption id="rodape">Source: IDC, May 2017</caption>
+    </table>
+</body>
+
+</html>

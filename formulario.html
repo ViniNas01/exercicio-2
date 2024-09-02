@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400..800&display=swap');
+
+        .conteudo {
+            max-width: 500px;
+            margin: auto;
+        }
+
+        .formulario {
+            font-family: "Baloo Tammudu 2";
+            background-image: url(imagem/cafe.png);
+            background-repeat: no-repeat;
+            height: 319px;
+            border-radius: 10px;
+        }
+
+        h1 {
+            color: white;
+            margin-bottom: 0px;
+            font-size: 30px;
+        }
+
+        h2 {
+            font-weight: 200;
+            color: white;
+            margin-top: 0px;
+            font-size: 18px;
+            position: relative;
+            bottom: 20px;
+        }
+
+        .textos {
+            width: 500px;
+            margin-left: 59px;
+            padding-top: 50px;
+        }
+
+        .dados {
+            padding-top: 10px;
+        }
+
+        .nome {
+            margin-bottom: 0px;
+        }
+
+        .input {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 2px solid rgb(201, 201, 201);
+            outline: none;
+            border-radius: 10px;
+        }
+
+        .input:focus {
+            border: 2px solid #a0a0a0;
+        }
+
+        button {
+            height: 80px;
+            width: 100%;
+            background-color: #7b530d;
+            font-size: 20px;
+            padding: 14px 40px;
+            border: none;
+            color: #fff;
+            border-radius: 10px;
+            margin: 20px 0px;
+            cursor: pointer;
+        }
+
+        p {
+            color: #4e4a4a;
+            margin-bottom: 0px;
+
+        }
+
+        .termos {
+            text-align: center;
+            margin: 20px 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="conteudo">
+        <form method="post">
+            <div class="formulario"> <!--Nesta div, contém a imagem junto com os textos-->
+                <div class="textos">
+                    <h1>Iniciar</h1>
+                    <h2>Deixe-nos criar sua conta</h2>
+                </div>
+            </div>
+            <div class="dados"> <!--Conteudo do formulario-->
+                <div>
+                    <p>Nome Completo</p>
+                    <input class="input" type="text" name="nomecompleto">
+                </div>
+                <div>
+                    <p>E-mail</p>
+                    <input type="email" name="usermail" class="input">
+                </div>
+                <div>
+                    <p>Senha</p>
+                    <input type="password" name="senha" class="input">
+                </div>
+            </div>
+            <div>
+                <button type="submit">Iniciar</button>
+            </div>
+            <div class="termos">
+                <p class="termos">Ao se inscrever você concorda com nossos <br> <a href="#">Termos e condicões</a></p>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
